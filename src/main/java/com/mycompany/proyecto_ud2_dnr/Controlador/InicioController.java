@@ -41,7 +41,8 @@ public class InicioController {
         txtContrasena.clear();
     }
 
-    private void validarLogin(ActionEvent event) {
+    @FXML
+    public void validarLogin(ActionEvent event) {
         try {
             int idTrabajador = Integer.parseInt(txtUsuario.getText().trim());
             LocalDate fechaNacimiento = LocalDate.parse(txtContrasena.getText().trim()); // Formato AAAA-MM-DD
